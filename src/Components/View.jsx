@@ -3,7 +3,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
 const View = () => {
-    const [data,setData]=useState([]);
+    var[data,setData]=useState([]);
 
     useEffect(()=>{
         axios.get("https://jsonplaceholder.typicode.com/posts")
@@ -21,7 +21,7 @@ const View = () => {
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell style={{color:'CaptionText',fontSize:'large', fontFamily:'revert'}}>Blog ID</TableCell>
+            <TableCell style={{color:'CaptionText',fontSize:'large', fontFamily:'revert'}}>ID</TableCell>
             <TableCell style={{color:'CaptionText',fontSize:'large', fontFamily:'revert'}}>Title</TableCell>
           </TableRow>
         </TableHead>
