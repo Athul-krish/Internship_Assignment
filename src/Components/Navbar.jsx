@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import BlurOnTwoToneIcon from '@mui/icons-material/BlurOnTwoTone';
 
-const Navbar = () => {
+const Navbar = ({ pageTitle }) => {
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
@@ -19,7 +19,7 @@ const Navbar = () => {
             <BlurOnTwoToneIcon/>
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 5 }} style={{color:'HighlightText', fontFamily:'initial',fontSize:'x-large'}}>
-          HomePage
+          {pageTitle}
           </Typography>
           <Link to={"/view"}><Button variant="contained" style={{fontSize:'medium'}}>Add Blog</Button></Link>&nbsp;
           <Link to={"/"}><Button variant="contained" style={{fontSize:'medium'}}>Home</Button></Link>

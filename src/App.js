@@ -1,16 +1,14 @@
-import './App.css';
-import Navbar from './Components/Navbar';
-import AddBlog from './Components/AddBlog';
-import { Route, Routes } from 'react-router-dom';
-import View from './Components/View';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./Components/HomePage";
+import AddBlogPage from "./Components/AddBlogPage";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
       <Routes>
-        <Route path='/' element={<View/>}></Route>
-        <Route path='/view' element={<AddBlog/>}></Route>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/view" element={<AddBlogPage />}></Route>
       </Routes>
     </div>
   );
